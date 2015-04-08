@@ -1,0 +1,16 @@
+{
+	"scope": "source.makefile",
+
+	"completions": [{
+			"trigger": ".phony\t phony targe",
+			"contents": ".PHONY:${1:target}\n${1:target}:$2"
+		}, {
+			"trigger": "addprefix\t addprefix",
+			"contents": "\\$(addprefix ${1:prefix}, ${2:list})"
+		}, {
+			"trigger": "makecmdgoals\t $(MAKECMDGOALS)",
+			"contents": "\\$(MAKECMDGOALS)"
+		}
+
+	]
+}
